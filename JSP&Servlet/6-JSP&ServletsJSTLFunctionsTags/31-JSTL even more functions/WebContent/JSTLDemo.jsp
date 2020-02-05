@@ -19,7 +19,8 @@
 6. substringBefore()
 7. substringAfter()
  -->
- 
+ <%-- Bu fonksiyonlar string üzerinde çalışır --%>
+ <%-- isimlerinden fonksiyonların ne yaptığı belli --%>
 <br/>${fn:toUpperCase("StudyEasy.org")}
 <br/>${fn:toLowerCase("StudyEasy")}
 <br/>${fn:indexOf("StudyEasy", "u") }

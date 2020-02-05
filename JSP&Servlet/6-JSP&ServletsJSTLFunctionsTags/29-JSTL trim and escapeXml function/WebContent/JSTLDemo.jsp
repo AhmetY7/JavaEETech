@@ -10,12 +10,17 @@
 <title>JSTL Demo</title>
 </head>
 <body>
+${fn:trim("          Ahmet           Yılmaz         . com")} <%-- trim fonksiyonu aralarda birden fazla boşluk olan kelimelerin arasında bir tane boşluk olmasını sağlıyor --%>
+<br />
+<h1> ExcapeXML Demo</h1>
+${fn:escapeXml("<h1> ExcapeXML Demo</h1>")} <%-- html olarak algılamıyor artık direk <h1> olarak basıyor ekrana --%>
+<br />
 	<c:set var="We" value="StudyEasy.org"></c:set>
 
-	${fn:startsWith("studyeasy.org","az") }
-	<br /> ${fn:endsWith( We , "or") }
-	<br /> ${fn:contains(We , "org") }
-	<br /> ${fn:containsIgnoreCase("studyeasy.org","easy") }
+	${fn:startsWith("studyeasy.org","az") } <%-- ilk verdiğimiz string ikinci verdiğimiz string ile başlıyorsa true döner --%>
+	<br /> ${fn:endsWith( We , "org") } <%-- ilk verdiğimiz değişken ikinci ile bitiyorsa true --%>
+	<br /> ${fn:contains(We , "ORG") } <%-- ilk verdiğimiz değişken ikinciyi içeriyorsa true --%>
+	<br /> ${fn:containsIgnoreCase("studyeasy.org","easy") } <%-- contains functionunun büyük küçük harf duyarlılığı olmayanı --%>
 
 </body>
 </html>

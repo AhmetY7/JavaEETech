@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-     <%@ taglib prefix = "fn" uri = "http://java.sun.com/jsp/jstl/functions" %>
+     <%@ taglib prefix = "fn" uri = "http://java.sun.com/jsp/jstl/functions" %> <%-- bu şekilde functions taglarını dahil edebiliriz sayfamıza --%>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -11,11 +11,11 @@
 </head>
 <body>
 <%
-String [] names = {"Chaand","John","Riya"};
+String [] names = {"Ahmet","Ömer","Mert"};
 %>
-<c:set var="namesArray" value="<%=names %>"/>
+<c:set var="namesArray" value="<%=names %>"/> <%-- Oluşturduğumuz diziyi core ile atamamız lazım yoksa <c:set yapmadan direk ${fn:length(names)} dersek görmüyor --%>
 
-${fn:length(namesArray)}
+${fn:length(namesArray)} <%-- functions tagleri için <fn: kullanılmaz expression lang. kullanılır yani ${fn: } --%>
 </body>
 </html>
 
