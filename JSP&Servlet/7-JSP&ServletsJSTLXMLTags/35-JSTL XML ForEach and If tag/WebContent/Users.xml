@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+	<user>
+		<name> Ahmet </name>
+		<gender> Male </gender>
+		<age> 35 </age>
+	</user>
+	<user>
+		<name> Fadime </name>
+		<gender>Female</gender>
+		<age> 24 </age>
+	</user>
+	<user>
+		<name> Mehmet </name>
+		<gender>Male</gender>
+		<age> 41 </age>
+	</user>
+	<user>
+		<name> Rabia </name>
+		<gender>Female</gender>
+		<age> 18 </age>
+	</user>
+</users>
