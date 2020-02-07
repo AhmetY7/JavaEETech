@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>49-Setting up</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page> <!-- xmlden error pagei kontrol etmesi daha kolay olduğu için xml dosyasında böyle bir tag oluşturduk ve error sayfamızın uzantısını verdik. 
+  web page de url bulamayınca buradan direk error sayfasına gidiyor bu tag ile extra bir koda ihtiyaç yok -->
+    <error-code>404</error-code>
+    <location>/error.jsp</location>
+  </error-page>
+</web-app>
